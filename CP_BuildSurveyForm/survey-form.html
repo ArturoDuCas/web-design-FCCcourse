@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body> 
+    <h1 id="title">Ducas Survey Form</h1>
+    <p id="description">Thank you for taking this survey!</p>
+    <form id="survey-form">
+      <h2 class="firstH2">Basic information: </h2>
+      <label for="name" id="name-label">Name: <input type="text" id="name" placeholder="Enter your name" required> </label>
+      <label for="email" id="email-label">Email: <input type="email" id="email" placeholder="Enter your email" required></label>
+      
+      <label for="number" id="number-label">Age: <input type="number" id="number" min="18" max="120" placeholder="Enter your age"></label>
+      
+      <label for="dropdown"> What do you think about this form?
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">It's good</option>
+            <option value="2">It's bad</option>
+          </select>
+        </label>
+        
+        
+      <h2>More information: </h2>
+      <label class="indications"> Select your gender:</label>
+      <label class="options"><input type="radio" name="gender" value="1"> Male</label>
+      <label class="options"><input type="radio" name="gender" value="2"> Female</label>
+      <label class="options"><input type="radio" name="gender" value="3"> Non binary</label>
+        
+      <label class="indications"> Select from the options:</label>
+      <label class="options"><input type="checkbox" value="1"> Option 1</label>
+      <label class="options"><input type="checkbox" value="2"> Option 2</label>
+      <label class="options"><input type="checkbox" value="3"> Option 3</label>
+      <label class="options"><input type="checkbox" value="4"> Option 4</label>
+      <label class="options"><input type="checkbox" value="5"> Option 5</label>
+      
+      <label class="indications">Additional comments: <textarea></textarea></label>
+
+      <input type="submit" id="submit">
+    </form>
+
+  </body>
+</html>

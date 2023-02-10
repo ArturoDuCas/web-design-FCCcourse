@@ -1,0 +1,106 @@
+body, input {
+    background-color: #06283D;
+    color : #DFF6FF;
+    font-family: monospace;
+    font-size: 18px;
+}
+
+h1 {
+    margin : 5% auto 0 auto;
+    text-align: center;
+}
+
+
+p[id="description"] {
+    text-align: center;
+    font-style : italic; 
+    font-size: 14px;
+}
+
+form { 
+    max-width : 50%;
+    min-width: 40%;
+    margin: 3% auto; 
+    background-color: #256D8550;
+    padding : 20px;
+    border-radius: 5%;
+}
+
+label { 
+    display : block; 
+    margin-bottom: 25px;
+    
+}
+
+input, select, option, textarea {
+    display : flex; 
+    width: 90%;
+    height: 30px; 
+    border-radius: 10px;
+    border : none;
+    margin : 5px auto 0 auto; 
+    background-color : #DFF6FF60; 
+    color : white; 
+    font-size: 14px;
+}
+
+
+option {
+    color: black;
+}
+
+input::placeholder {
+    color : white; 
+} 
+
+input[type="radio"], input[type="checkbox"]  {
+    display: inline-block;
+    margin: 0 0.5em 0 0;
+    width: unset;
+    vertical-align: middle;
+}
+
+h2 {
+    margin-top: 40px;
+    margin-bottom : 10px; 
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.firstH2 {
+    margin-top: 0;
+}
+
+.indications {
+    margin: 20px 0 15px 0; 
+}
+
+label[class="options"] {
+    margin-bottom : 5px; 
+    font-size : 90%;
+}
+
+
+textarea {
+    height : 50px; 
+    margin : 15px auto; 
+}
+
+input[type="submit"] { 
+    max-width : 100px;
+    display : block; 
+    font-size : 14px; 
+    background-color : white; 
+    color : #06283D;
+    padding: unset; 
+    margin: 30px auto 15px auto;
+    text-transform: uppercase; 
+
+}
+
+
+
+
+
+
+

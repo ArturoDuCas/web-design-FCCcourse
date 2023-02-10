@@ -1,0 +1,93 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"\>
+    <meta name="viewport" content="width=device-width, inital-scale=1.0"\>
+    <link rel="stylesheet" href="styles.css"\>
+
+  </head>
+  <body>
+    <nav id="navbar">
+      <header id="nav-title">JavaScript basics</header>
+      <hr></hr>
+      <div class="nav-link-container"><a 
+      class="nav-link" href="#What_is_JavaScript?">What is JavaScript?</a></div>
+      <hr></hr>
+      <div class="nav-link-container"><a class="nav-link" href='#A_"Hello_world"_example'>A "Hello world" example</a></div>
+      <hr></hr>
+      <div class="nav-link-container"><a class="nav-link" href='#Variables'>Variables</a></div>
+      <hr></hr>
+      <div class="nav-link-container"><a class="nav-link" href='#Comments'>Comments</a></div>
+      <hr></hr>
+      <div class="nav-link-container"><a class="nav-link" href='#Conditionals'>Conditionals</a></div>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="What_is_JavaScript?">
+        <header>What is JavaScript?</header>
+        <p>JavaScript is a powerful programming language that can add interactivity to a website. It was invented by Brendan Eich.</p>
+        <p>JavaScript is versatile and beginner-friendly. With more experience, you'll be able to create games, animated 2D and 3D graphics, comprehensive database-driven apps, and much more!</p>
+        <p>JavaScript itself is relatively compact, yet very flexible. Developers have written a variety of tools on top of the core JavaScript language, unlocking a vast amount of functionality with minimum effort. These include:</p>
+        <ul>
+          <li>Browser Application Programming Interfaces (APIs) built into web browsers, providing functionality such as dynamically creating HTML and setting CSS styles; collecting and manipulating a video stream from a user's webcam, or generating 3D graphics and audio samples.</li>
+<li>Third-party APIs that allow developers to incorporate functionality in sites from other content providers, such as Twitter or Facebook.</li>
+<li>Third-party frameworks and libraries that you can apply to HTML to accelerate the work of building sites and applications.</li>
+        </ul>
+      </section>
+      <section class="main-section" id='A_"Hello_world"_example'>
+        <header>A "Hello world" example</header>
+        <p>JavaScript is one of the most popular modern web technologies! As your JavaScript skills grow, your websites will enter a new dimension of power and creativity.</p>
+        <p>However, getting comfortable with JavaScript is more challenging than getting comfortable with HTML and CSS. You may have to start small, and progress gradually. To begin, let's examine how to add JavaScript to your page for creating a Hello world! example. (Hello world! is the standard for introductory programming examples.)</p>
+        <ol>
+          <li>Create a new text document called main.js, and save it.</li>
+          <li>Add this code to the main.js file:
+            <code>
+              <span id="spacer-span">const myHeading = document.querySelector("h1");</span>
+              <span id="spacer-span">myHeading.textContent = "Hello world!";</span>
+            </code>
+          </li>
+          <li>Make sure the HTML and JavaScript files are saved. Then load index.html in your browser. You should see something like this:</li>
+        </ol>
+        <img src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics/hello-world.png"/>
+      </section> 
+
+      <section class="main-section" id='Variables'>
+        <header>Variables</header>
+        <p>Variables are containers that store values. You start by declaring a variable with the let keyword, followed by the name you give to the variable:</p>
+        <code> 
+          let myVariable;
+        </code>
+        <p>A semicolon at the end of a line indicates where a statement ends. It is only required when you need to separate statements on a single line. However, some people believe it's good practice to have semicolons at the end of each statement. There are other rules for when you should and shouldn't use semicolons. For more details, see Your Guide to Semicolons in JavaScript.</p>
+      </section> 
+
+      <section class="main-section" id="Comments">
+        <header>Comments</header>
+        <p>Comments are snippets of text that can be added along with code. The browser ignores text marked as comments. You can write comments in JavaScript just as you can in CSS:</p>
+        <code>
+          <span id="spacer-span">/*</span>
+          <span id="spacer-span-1tab">Everything in</span> 
+          <span id="spacer-span-1tab">between is a </span>
+          <span id="spacer-span-1tab">comment.</span>
+          <span id="spacer-span">*/</span>
+        </code>
+        <p>If your comment contains no line breaks, it's an option to put it behind two slashes like this:</p>
+        <code>
+          // This is a comment
+        </code>
+      </section>
+
+      <section class="main-section" id="Conditionals">
+        <header>Conditionals</header>
+        <p>Conditionals are code structures used to test if an expression returns true or not. A very common form of conditionals is the if...else statement. For example:</p>
+        <code>
+          <span id="spacer-span">let iceCream = "chocolate";</span>
+          <span id="spacer-span">if (iceCream === "chocolate") {</span>
+            <span id="spacer-span-1tab">alert("Yay, I love chocolate ice cream!");</span>
+          <span id="spacer-span">} else {</span>
+            <span id="spacer-span-1tab">alert("Awwww, but chocolate is my favorite…");</span>
+          <span id="spacer-span">}</span>
+        </code>
+        <p>The expression inside the if () is the test. This uses the strict equality operator (as described above) to compare the variable iceCream with the string chocolate to see if the two are equal. If this comparison returns true, the first block of code runs. If the comparison is not true, the second block of code—after the else statement—runs instead.</p>
+      </section>
+    </main> 
+  </body>
+</html> 

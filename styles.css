@@ -1,0 +1,248 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth; 
+    }
+}
+
+:root {
+    --background-color: white;
+    --background-darker-color: rgb(242, 242, 242);
+    --header-color: rgb(232, 229, 229); 
+    --header-size: 75px; 
+    --secondary-color: #3C2A21; 
+}
+
+* {
+    font-family: "Lato", sans-serif;
+    margin: 0; 
+    box-sizing: border-box;
+    scroll-margin-top: var(--header-size); 
+    /* border: 1px solid;  */
+}
+
+body {
+    overflow-x: hidden;
+    display: grid;  
+    grid-template-rows: var(--header-size) 1fr;
+}
+
+a {
+    text-decoration: none;
+    color: black; 
+}
+
+/* HEADER */
+header {
+    grid-row: 1 / 2; 
+    background-color: var(--header-color); 
+    padding: 10px; 
+    position: sticky;
+    top: 0px; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+    z-index: 100; 
+}
+
+#navbar {
+    margin: auto; 
+}
+
+#navbar a {
+    position: relative; 
+    top: 5px; 
+    margin: 0 20px; 
+    padding: 5px 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid; 
+    transition-property: top, border-bottom;
+    transition-duration: 0.5s;
+}
+
+#navbar a:hover {
+    top: 0px; 
+    border-bottom: 3px var(--secondary-color) solid;
+}
+
+/* MAIN PAGE */
+main {
+    background-color: var(--background-color);
+    grid-row: 2 / 3; 
+}
+
+/* FIRST PAGE */
+#welcome-section {
+    height: calc(100vh - var(--header-size));
+    display: grid; 
+    grid-template-columns: 2fr 1fr;
+}
+
+/* Left side */
+#left-side {
+    margin: auto; 
+    width: 70%; 
+}
+#hi {
+    font-size: 10vw; 
+}
+
+.comma {
+    content: ","; 
+    font-size: 60%;
+}
+
+.word {
+    position: relative; 
+    top: 0px;  
+    transition-property: top;
+    transition-duration: 0.2s;
+}
+.word:hover {
+    top: -3px;  
+}
+
+#my-name {
+    font-weight: 100;
+    font-size: 5vw; 
+    margin-bottom: 15px; 
+}
+
+#my-job {
+    border: 1px solid; 
+    padding: 5px 0 5px 15px; 
+    font-weight: 100;
+    letter-spacing: 4px;
+    transition-property: background-color, font-color;
+    transition-duration: 1s;
+}
+
+#my-job:hover{
+    background-color: var(--secondary-color);
+    color: white; 
+}
+
+/* Right side */
+#right-side {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#first-image { 
+    min-width: 40vw;
+    max-height: calc(90vh - var(--header-size));
+    max-width: 50vw;
+    object-fit: cover; 
+}
+
+/* Section Div */
+.divisor { 
+    border-bottom: 100px solid var(--background-darker-color);
+    border-left: 100vw solid transparent;
+}
+
+/* PROJECTS */
+#projects {
+    padding: 2vw; 
+    background-color: var(--background-darker-color);
+}
+
+h1.projects {
+    padding-left: 6vw; 
+    font-size: 8vw;
+    font-weight: 300;
+}
+
+#projects-container {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    padding: 4vw 6vw 0 6vw; 
+}
+
+.project-box {
+    min-height: 30vh;
+    position: relative; 
+    top: 0px; 
+    margin-bottom: 4vw;
+    width: 40vw;
+    padding: 20px;  
+    background-color: white;
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+                0 0  0 2px rgb(255,255,255),
+                0.3em 0.3em 1em rgba(0,0,0,0.3);
+                transition: top; 
+    transition-duration: 0.5s;
+}
+
+.project-box:hover {
+    top:-1vw;   
+}
+
+
+.project-image {
+    width: 100%; 
+}
+
+.project-title {
+    padding-top: 5px; 
+    text-align: center; 
+    font-size: 2vw;
+    letter-spacing: 0.2vw;
+    font-weight: 100;
+}
+
+.divisor-reversed {
+    border-top: 40px solid var(--background-darker-color);
+    border-right: 100vw solid transparent;
+}
+
+/* CONTACT */
+#contact {
+    height: calc(100vh - var(--header-size));
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items:stretch;
+    text-align: center;
+}
+
+#contact h1 {
+    font-size: 10vw;
+    font-weight: 200;
+    margin-bottom: 1vh; 
+}
+
+#contact h2 {
+    margin-top: -10px; 
+    font-weight: 100;
+    color: var(--secondary-color); 
+    margin-bottom: 6vh;
+}
+
+.social-networks-container {
+    display: flex; 
+    gap: 5vw; 
+    justify-content: center;
+}
+
+.social-networks-container a {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw; 
+    font-weight: 800;
+    position: relative; 
+    top: 0px; 
+    transition-property: top;
+    transition-duration: 1s;
+}
+
+.social-networks-container a:hover{
+    top: 2vh; 
+}
+
+.social-networks-container a i {
+    font-size: 3vw;
+    color: var(--secondary-color); 
+}
